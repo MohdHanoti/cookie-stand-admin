@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import ReportTable from './ReportTable'
 
 export default function Form() {
 
@@ -109,7 +110,7 @@ export default function Form() {
                     </section>
                 </form>
 
-                <section>
+                {/* <section>
                     {resultState.map((data) => {
                         return (
                             <div className='max-w-md mx-auto md:max-w-2xl'>
@@ -119,7 +120,15 @@ export default function Form() {
                     }
                     )}
 
-                </section>
+                </section> */}
+                <section className="w-full pt-10 text-center shadow-lg shadow-black-50 text-xl bg-[#59abff33] text-[#EFE2B2] pb-10">
+       
+                 {resultState.length > 0 && <ReportTable 
+                report = {resultState}
+                />}
+                {resultState.length == 0 && <h2>No Cookie Stands Available</h2>}
+
+      </section>
 
             </div>
         </>
