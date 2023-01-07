@@ -50,7 +50,7 @@ export default function Form() {
             <div className=''>
                 <form onSubmit={onSubmitHandler} className="my-7" >
 
-                    <section className="max-w-md mx-auto bg-[#16abff33] rounded-xl shadow-md overflow-hidden md:max-w-2xl mt-150 ">
+                    <section className="max-w-md mx-auto bg-[#16abff33] rounded-xl shadow-md overflow-hidden md:max-w-2xl mt-150 dark:bg-slate-900">
                         <section className="relative">
                             <section>
                                 <label className='ml-7 font-medium'>Location</label>
@@ -121,7 +121,7 @@ export default function Form() {
                     )}
 
                 </section> */}
-                <section className="w-full pt-10 text-center shadow-lg shadow-black-50 text-xl bg-[#59abff33] text-[#EFE2B2] pb-10">
+                <section className="w-full pt-10 text-center shadow-lg shadow-black-50 text-xl bg-[#59abff33] text-[#EFE2B2] pb-10 dark:bg-slate-900">
        
                  {resultState.length > 0 && <ReportTable 
                 report = {resultState}

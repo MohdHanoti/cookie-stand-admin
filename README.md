@@ -1,4 +1,4 @@
-# LAB - Class 33
+# LAB - Class 34
 
 ## Project: cookie-stand-admin
 
