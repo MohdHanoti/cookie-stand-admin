@@ -8,7 +8,7 @@ export default function ReportTable({ report }) {
   return (
    
     <div>
-      <Table bordered className="text-black">
+      <Table bordered className="text-black ">
         <thead className="border-[#5A2C22] border-2">
           <tr className="">
             <th className="">Location</th>
