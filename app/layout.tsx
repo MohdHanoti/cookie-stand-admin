@@ -4,6 +4,8 @@ import './globals.css'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import ThemeWrapper from './contexts/theme'
+import { AuthWrapper } from './contexts/auth';
+
 export default function RootLayout({
   children,
 }: {
@@ -16,19 +18,21 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <ThemeWrapper>
-      <body>
-      <header>
-          <Header />
-        </header>
-        <main className='dark:bg-black'>
-          {children}
-        </main>
-        <footer>
-          <Footer />
-        </footer>
-        </body>
-        </ThemeWrapper>
+      <AuthWrapper>
+        <ThemeWrapper>
+        <body>
+        <header>
+            <Header />
+          </header>
+          <main className='dark:bg-black'>
+            {children}
+          </main>
+          <footer>
+            <Footer />
+          </footer>
+          </body>
+          </ThemeWrapper>
+        </AuthWrapper>
     </html>
   )
 }
